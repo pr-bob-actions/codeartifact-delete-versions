@@ -1,0 +1,35 @@
+name: Codeartifact delete versions
+description: Delete package's versions from Codeartifact
+
+inputs:
+  arn:
+    description: Codeartifact ARN
+    required: true
+  package:
+    description: Name of the package without namespace
+    required: true
+  namespace:
+    description: Namespace
+    required: false
+  verions:
+    description: Version(s) to delete, if many use comma or space sparated string
+    required: false
+  prerelease:
+    description: Delete all versions that match the pattern x.x.x-<prerelease>
+    required: false
+  match:
+    description: Delete all verions that match the regexp
+    required: false
+  dry-run:
+    description: "Do not really delete versions"
+    required: false
+
+outputs:
+  number-of-deleted-versions:
+    description: The number of deleted versions
+  deleted-versions:
+    description: Comma separated list of deleted versions
+
+runs:
+  using: node16
+  main: dist/index.js
