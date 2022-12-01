@@ -15,6 +15,7 @@
     "dev": "ts-node-dev --respawn --clear --rs -r dotenv/config ./src/index.ts",
     "types-check": "tsc",
     "build": "yarn types-check && ncc build -o dist ./src/index.ts",
-    "dev:node": "node -r dotenv/config ./dist/index.js"
+    "dev:node": "node -r dotenv/config ./dist/index.js",
+    "test": "echo no test !!!"
   }
 }
