@@ -8,6 +8,9 @@ inputs:
   package:
     description: Name of the package without namespace
     required: true
+  format:
+    description: Registry format (npm | pypi)
+    required: true
   namespace:
     description: Namespace
     required: false
