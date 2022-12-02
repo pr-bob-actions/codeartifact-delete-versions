@@ -24795,7 +24795,7 @@ function parseInputs() {
         versions: (_e = process.env.INPUT_VERSIONS) !== null && _e !== void 0 ? _e : "",
         prerelease: (_f = process.env.INPUT_PRERELEASE) !== null && _f !== void 0 ? _f : "",
         match: (_g = process.env.INPUT_MATCH) !== null && _g !== void 0 ? _g : "",
-        dryRun: (_h = process.env.INPUT_DRY_RUN) !== null && _h !== void 0 ? _h : "",
+        dryRun: (_h = process.env.INPUT_DRYRUN) !== null && _h !== void 0 ? _h : "",
     };
 }
 exports.parseInputs = parseInputs;
