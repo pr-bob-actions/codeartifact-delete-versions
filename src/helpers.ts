@@ -9,7 +9,7 @@ export function parseInputs(): Inputs {
     versions: process.env.INPUT_VERSIONS ?? "",
     prerelease: process.env.INPUT_PRERELEASE ?? "",
     match: process.env.INPUT_MATCH ?? "",
-    dryRun: process.env.INPUT_DRY_RUN ?? "",
+    dryRun: process.env.INPUT_DRYRUN ?? "",
   };
 }
 

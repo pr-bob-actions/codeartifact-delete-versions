@@ -20,7 +20,7 @@ inputs:
   match:
     description: Delete all verions that match the regexp
     required: false
-  dry-run:
+  dryRun:
     description: "Do not really delete versions"
     required: false
 
