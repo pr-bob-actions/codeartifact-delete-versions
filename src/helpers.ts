@@ -2,14 +2,14 @@ import { Config, Format, Inputs, Registry, VersionSelector } from "./types";
 
 export function parseInputs(): Inputs {
   return {
-    arn: process.env.INPUTS_ARN ?? "",
-    format: process.env.INPUTS_FORMAT ?? "",
-    packageName: process.env.INPUTS_PACKAGE ?? "",
-    namespace: process.env.INPUTS_NAMESPACE ?? "",
-    versions: process.env.INPUTS_VERSIONS ?? "",
-    prerelease: process.env.INPUTS_PRERELEASE ?? "",
-    match: process.env.INPUTS_MATCH ?? "",
-    dryRun: process.env.INPUTS_DRY_RUN ?? "",
+    arn: process.env.INPUT_ARN ?? "",
+    format: process.env.INPUT_FORMAT ?? "",
+    packageName: process.env.INPUT_PACKAGE ?? "",
+    namespace: process.env.INPUT_NAMESPACE ?? "",
+    versions: process.env.INPUT_VERSIONS ?? "",
+    prerelease: process.env.INPUT_PRERELEASE ?? "",
+    match: process.env.INPUT_MATCH ?? "",
+    dryRun: process.env.INPUT_DRY_RUN ?? "",
   };
 }
 
