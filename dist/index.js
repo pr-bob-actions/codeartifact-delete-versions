@@ -24788,14 +24788,14 @@ exports.filterVersions = exports.buildPrereleaseRegexp = exports.validateFormat 
 function parseInputs() {
     var _a, _b, _c, _d, _e, _f, _g, _h;
     return {
-        arn: (_a = process.env.INPUTS_ARN) !== null && _a !== void 0 ? _a : "",
-        format: (_b = process.env.INPUTS_FORMAT) !== null && _b !== void 0 ? _b : "",
-        packageName: (_c = process.env.INPUTS_PACKAGE) !== null && _c !== void 0 ? _c : "",
-        namespace: (_d = process.env.INPUTS_NAMESPACE) !== null && _d !== void 0 ? _d : "",
-        versions: (_e = process.env.INPUTS_VERSIONS) !== null && _e !== void 0 ? _e : "",
-        prerelease: (_f = process.env.INPUTS_PRERELEASE) !== null && _f !== void 0 ? _f : "",
-        match: (_g = process.env.INPUTS_MATCH) !== null && _g !== void 0 ? _g : "",
-        dryRun: (_h = process.env.INPUTS_DRY_RUN) !== null && _h !== void 0 ? _h : "",
+        arn: (_a = process.env.INPUT_ARN) !== null && _a !== void 0 ? _a : "",
+        format: (_b = process.env.INPUT_FORMAT) !== null && _b !== void 0 ? _b : "",
+        packageName: (_c = process.env.INPUT_PACKAGE) !== null && _c !== void 0 ? _c : "",
+        namespace: (_d = process.env.INPUT_NAMESPACE) !== null && _d !== void 0 ? _d : "",
+        versions: (_e = process.env.INPUT_VERSIONS) !== null && _e !== void 0 ? _e : "",
+        prerelease: (_f = process.env.INPUT_PRERELEASE) !== null && _f !== void 0 ? _f : "",
+        match: (_g = process.env.INPUT_MATCH) !== null && _g !== void 0 ? _g : "",
+        dryRun: (_h = process.env.INPUT_DRY_RUN) !== null && _h !== void 0 ? _h : "",
     };
 }
 exports.parseInputs = parseInputs;
